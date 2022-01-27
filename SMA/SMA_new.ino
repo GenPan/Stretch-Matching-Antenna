@@ -3,8 +3,8 @@
 
 int fr ; //frequanza da raggiungere (mettiamo il valore noi per adesso)
 int fa; //frequenza antenna
-int fM = 434 ; //frequanza massima raggiungibile
-int fm = 380 ; //frequanza minima raggiungibile
+int fM = 434 ; //frequanza massima raggiungibile in Mhz
+int fm = 380 ; //frequanza minima raggiungibile in Mhz
 
 int SMA1 = 3; //molla principale (di movimento)
 int SMA2 =11; //molla di bloccaggio (per lo schema provvisorio)  
