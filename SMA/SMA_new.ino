@@ -52,7 +52,7 @@ void move( int S1 , int S2 , int f , int fin, int fMax , int fMin ){
   
 analogWrite(S2, 255 ) ; // si aprono i blocchi
 
-int c = 3*(10^2); // velocità della luce 
+int c = 3*(10^2); // velocità della luce in m*Mhz
   int difference; // differenza in percentuale tra fr e fa
     int LMax = (1/4)*(c/fMax) ; //lunghezza massima raggiungibile
       int LMin = (1/4)*(c/fMin) ; //lunghezza minima raggiungibile
