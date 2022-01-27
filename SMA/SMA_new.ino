@@ -3,8 +3,8 @@
 
 int fr ; //frequanza da raggiungere (mettiamo il valore noi per adesso)
 int fa; //frequenza antenna
-int fM; //frequanza massima raggiungibile
-int fm; //frequanza minima raggiungibile
+int fM = 434 ; //frequanza massima raggiungibile
+int fm = 380 ; //frequanza minima raggiungibile
 
 int SMA1 = 3; //molla principale (di movimento)
 int SMA2 =11; //molla di bloccaggio (per lo schema provvisorio)  
@@ -52,7 +52,7 @@ void move( int S1 , int S2 , int f , int fin, int fMax , int fMin ){
   
 analogWrite(S2, 255 ) ; // si aprono i blocchi
 
-int c = 3*10^8; // velocità della luce 
+int c = 3*(10^2); // velocità della luce 
   int difference; // differenza in percentuale tra fr e fa
     int LMax = (1/4)*(c/fMax) ; //lunghezza massima raggiungibile
       int LMin = (1/4)*(c/fMin) ; //lunghezza minima raggiungibile
